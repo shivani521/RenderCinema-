@@ -6,7 +6,7 @@ import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
 export default React.memo (function MovieSlider ({data, title}) { 
     const listRef = useRef()
 
-    const [controlVisibility, setControlVisibility] = useState(false)
+    const [controlvisibilty, setcontrolvisibilty] = useState(false)
     const [sliderPosition, setSliderPosition] = useState(0)
 
     const handleDirection = (direction)=>{
@@ -22,13 +22,13 @@ export default React.memo (function MovieSlider ({data, title}) {
     }
   return (
     <Container
-    controlVisibility = {controlVisibility}
-    onMouseEnter={() =>setControlVisibility(true)}
-    onMouseLeave={()=>setControlVisibility(false)}
+    controlvisibilty = {controlvisibilty}
+    onMouseEnter={() =>setcontrolvisibilty(true)}
+    onMouseLeave={()=>setcontrolvisibilty(false)}
     >
         <h1>{title}</h1>
         <div className="wrapper">
-            <div className={`slider-action left ${!controlVisibility ? `none` : ''}`}>
+            <div className={`slider-action left ${!controlvisibilty ? `none` : ''}`}>
                 <AiOutlineLeft onClick={()=> handleDirection('left')} />
             </div>
             <div className='slider' ref={listRef}>
@@ -38,7 +38,7 @@ export default React.memo (function MovieSlider ({data, title}) {
         })
       }
     </div>
-    <div className={`slider-action right ${!controlVisibility ? `none` : ''}`}>
+    <div className={`slider-action right ${!controlvisibilty ? `none` : ''}`}>
                 <AiOutlineRight onClick={()=> handleDirection('right')}/>
             </div>
     </div>

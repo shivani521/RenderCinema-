@@ -147,6 +147,6 @@ margin-top: 1rem;
             }
         }
     }
-    background-color: red;
+    background-color: grey;
 `;
 
