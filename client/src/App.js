@@ -17,7 +17,7 @@ function App() {
       <Route exact path='/signup' element={<SignUpPage/>}></Route>
       <Route exact path='/player' element={<Player/>}></Route>
       <Route exact path='/tv' element={<TvShow/>}></Route>
-      <Route exact path='/' element={<Netflix/>}></Route>
+      <Route exact path='/' element={<SignUpPage/>}></Route>
       <Route exact path='/movie' element={<MoviePage/>}></Route>
       
     </Routes>
